@@ -22,9 +22,11 @@ with st.sidebar:
     ethnicity = st.sidebar.multiselect("Seleccione grupo", options=df['race/ethnicity'].unique(), default=df['race/ethnicity'].unique())
     degree = st.sidebar.multiselect("Seleccione grado", options=df['parental_level_of_education'].unique(), default=df['parental_level_of_education'].unique())
     
-    url = 'repo'
-    st.link_button("Ir a repositorio: ", url)
+    url = 'https://github.com/alejotrenti/academic-performance'
+    st.link_button("GitHub", url)
     
+    url2 = 'https://www.linkedin.com/in/alejo-trenti-99aa572bb/'
+    st.link_button("LinkedIn", url2)
 
 df_filtered = df[(df['gender'].isin(gender)) & (df['race/ethnicity'].isin(ethnicity)) & (df['parental_level_of_education'].isin(degree))]
 
