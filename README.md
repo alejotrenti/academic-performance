@@ -86,6 +86,7 @@ streamlit run app.py
 | Histograma | Radar Chart |
 |------------|-------------|
 | ![hist](./screenshots/histograma.png) | ![radar](./screenshots/radar.png) |
+
 | Scatter Plot | Densidad (KDE) |
 |------------|-------------|
 | ![hist](./screenshots/scatter.png) | ![radar](./screenshots/kde.png) |
